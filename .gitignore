@@ -26,6 +26,9 @@ FPGA/dhr_fpga_working_dirctory
 !*/
 !*.v
 !*.ucf
+dataset_collection/crop_lines_folder
+*.png
+
 
 #————————————————————-
 *.pyc
