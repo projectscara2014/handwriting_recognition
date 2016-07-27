@@ -1,0 +1,24 @@
+technical_paper/
+*/references/
+receipts/
+*/data/
+
+*.png
+*.jpg
+*.bmp
+*.DS_Store
+*.vcd
+*.vvp
+*.npy
+*.pyc
+*.pdf
+*.PDF
+*.doc
+*.ppt
+*.gz
+
+
+project report/
+project documents/
+
+*.ipynb_checkpoints/
