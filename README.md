@@ -1,8 +1,25 @@
-# handwriting-recognition-using-neural-networks-on-FPGA-final-year-project
-######Collaborators: Riyansh Karani, Dhruv Reshamwala, Akash Rana, Kishore Saldanha
-My final Year project, involving a neural network and image processing based system for handwriting recognition.
-Working on an FPGA implementation for the same.
+# Real Time Handwritten Character Recognition using Image Processing and Neural Networks implemented on an FPGA
 
-This is work in Progress.
+This repository is our final year project.
 
-Done in collaboration with [dhr9](https://github.com/dhr9), for the other half of this project, please visit [his page](https://github.com/dhr9/HandwritingRecognition_using_ImageProcessing_and_NeuralNetworks_on_an_FPGA)
+This project involves 2 main parts:-
+
+1) The Backend Part
+
+2) The Frontend Part
+
+The *Backend Part* consists of 2 major sections:-
+
+i) MNIST-compatible Handwritten Character **Dataset Collection**.
+
+ii) **Neural Network Training** on alphanumerical and special characters. Trained using self-created Dataset and the MNIST dataset.
+
+
+The *Frontend Part* consists of 2 major sections:-
+
+i) **Real Time Character Recognition**.
+
+ii) **FPGA implementation** of Neural Network classifier.
+
+
+**Note: -** Specific Hardware is required to test out the project.
