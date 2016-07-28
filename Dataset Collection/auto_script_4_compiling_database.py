@@ -1,3 +1,12 @@
+"""
+	This script is used to compile the database as per the instruction given.
+	Options provided are:
+		> original / tilted
+		> selected letters
+		> rejected letters
+	Saves single dataset file in "final_dataset_folder".
+"""
+
 import os
 import sys
 import numpy as np
