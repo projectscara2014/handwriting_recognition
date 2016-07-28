@@ -1,3 +1,11 @@
+"""
+	This script is the main real time text identification script.
+	This script makes use of MULTI-THREADING to increase the Throughput
+		in order to make it a live continuous feed. Inter-thread
+		communication is fascilitated by the use of Queues, QueueLocks
+		etc.
+"""
+
 import Queue
 import threading
 import time
