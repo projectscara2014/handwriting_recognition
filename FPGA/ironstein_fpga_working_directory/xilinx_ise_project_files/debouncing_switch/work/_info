@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/projects_working_directory/debouncing_switch
+vglbl
+Z1 !s110 1456892234
+!i10b 1
+!s100 iAZTi=QW>8?0X<3bI]e]Y3
+I6ObP;b>NK_YeXIWKhaL=81
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1284595865
+8C:/Xilinx/12.3/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/12.3/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1456892234.000000
+!s107 C:/Xilinx/12.3/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/12.3/ISE_DS/ISE/verilog/src/glbl.v|
+!s101 -O0
+!i113 1
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vtick_generator
+R1
+!i10b 1
+!s100 bgLi@5oQfiM1E5?YQ:?Z70
+IooXF@>]5S>H?i6;YQY7Ll1
+R2
+R0
+w1456892158
+8debouncing_switch_verilog_modules/tick_generator.v
+Fdebouncing_switch_verilog_modules/tick_generator.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 debouncing_switch_verilog_modules/tick_generator.v|
+!s90 -reportprogress|300|debouncing_switch_verilog_modules/tick_generator.v|
+!s101 -O0
+!i113 1
+R5

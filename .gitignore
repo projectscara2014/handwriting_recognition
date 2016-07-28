@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FPGA/references/
 neural_networks/references/
 neural_networks/env
@@ -32,3 +33,31 @@ dataset_collection/crop_lines_folder
 
 #————————————————————-
 *.pyc
+=======
+technical_paper/
+*/references/
+receipts/
+*/data/
+
+*.png
+*.jpg
+*.bmp
+*.DS_Store
+*.vcd
+*.vvp
+*.npy
+*.pyc
+*.pdf
+*.PDF
+*.doc
+*.ppt
+*.gz
+
+*.sublime-project
+*.sublime-workspace
+
+project report/
+project documents/
+
+*.ipynb_checkpoints/
+>>>>>>> develop
