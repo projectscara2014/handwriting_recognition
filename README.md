@@ -8,13 +8,15 @@ This project involves 2 main parts:-
 
 2) The Frontend Part
 
+--------------------------------------
+
 The *Backend Part* consists of 2 major sections:-
 
 i) MNIST-compatible Handwritten Character **Dataset Collection**.
 
 ii) **Neural Network Training** on alphanumerical and special characters. Trained using self-created Dataset and the MNIST dataset.
 
-
+--------------------------------------
 The *Frontend Part* consists of 2 major sections:-
 
 i) **Real Time Character Recognition**.
@@ -22,4 +24,6 @@ i) **Real Time Character Recognition**.
 ii) **FPGA implementation** of Neural Network classifier.
 
 
-**Note: -** Specific Hardware is required to test out the project.
+**Note: -** Specific Hardware is required to test sections of the project.
+
+**Note: -** The FPGA device used was the Spartan 6 XC6SLX9 FPGA.
