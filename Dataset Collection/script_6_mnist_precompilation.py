@@ -1,3 +1,7 @@
+"""
+	This script precompiles the MNIST dataset in a '.npy' format.
+"""
+
 import os
 import sys
 import numpy as np

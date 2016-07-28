@@ -1,3 +1,8 @@
+"""
+	This script uses the MNIST dataset and finds skincropped images and stores in a folder.
+	This is not a part of auto script series since it has to be used just once.
+"""
+
 import os
 import sys
 import numpy as np
