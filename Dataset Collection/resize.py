@@ -1,3 +1,6 @@
+"""
+	This script reshapes and resizes the image to the required image.
+"""
 
 # #----------------------- CONSTANTS ------------------------------
 FINAL_IMAGE_SIZE = 20
@@ -22,7 +25,6 @@ def time_this_function(function) :
         print(function.__name__ + ' -- elapsed_time -- ' + str(elapsed_time) + ' ms\n')
         return return_value
     return wrapper_function
-
 
 class reshape() :	
 

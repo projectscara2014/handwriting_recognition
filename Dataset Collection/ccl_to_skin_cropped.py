@@ -1,3 +1,11 @@
+"""
+	This script deals with functions to generate masks for cropping out "skin-tight-images".
+	A "skin-tight-image" is an image which contains ONLY the character and ignores all other
+		noise.
+	Crop_mask are made for each object. Decision to KEEP or REJECT an object as a part of the
+		character is decided in a 'decision_maker_v2.py'
+"""
+
 import cv2
 import sys
 import numpy as np
