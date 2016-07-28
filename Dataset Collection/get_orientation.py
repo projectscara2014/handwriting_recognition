@@ -1,3 +1,8 @@
+"""
+    This script is used to get the orientation of the scanned image.
+    The use of lib_image_processing ensures fast execution of the convolution function.
+"""
+
 import numpy as np
 
 def rgb_to_bnw(image,threshold = 200,numpy_array = False) : 

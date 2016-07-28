@@ -1,3 +1,8 @@
+"""
+    This script is a 'utils' script which basically allows the usage of image_processing functions implemented in C.
+    These functions are accessed via C-python binding which requires this script.
+"""
+
 import ctypes
 import numpy
 

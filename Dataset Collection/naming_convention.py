@@ -1,3 +1,7 @@
+"""
+	This script manages the naming convention to be followed for naming of the files.
+"""
+
 def main(START_VALUE= 0):
 	import os
 
