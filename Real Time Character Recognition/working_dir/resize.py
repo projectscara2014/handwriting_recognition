@@ -1,4 +1,6 @@
-
+"""
+	This script reshapes and resizes the image to the required image.
+"""
 # #----------------------- CONSTANTS ------------------------------
 FINAL_IMAGE_SIZE = 20
 # #----------------------------------------------------------------

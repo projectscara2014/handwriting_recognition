@@ -1,11 +1,10 @@
+"""
+	This script is a "utils" script for character identification.
+"""
+
 import resize
 import cv2
 from classifier_python.classifier import classifier
-
-if __name__ == '__main__':
-	import try2
-	import sys
-	sys.exit(0)
 
 dictionary = {
 	62:"<",	63:">",	64:"{",	65:"}",	66:"(",	67:")",	68:"[",\
@@ -25,7 +24,6 @@ def get_letter(a):
 	else:
 		b = dictionary[a]
 	return b
-
 
 def identify(cropped_im):
 	im = resize.main(cropped_im)

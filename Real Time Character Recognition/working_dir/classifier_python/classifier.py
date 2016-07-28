@@ -1,3 +1,7 @@
+"""
+    This script acts as a neural network classifier in absence of FPGA.
+"""
+
 import random
 import numpy as np
 import pickle
@@ -10,13 +14,38 @@ input_layer_neurons = 400
 hidden_layer_neurons = 10
 output_layer_neurons = 5
 
+import sys
+
+WORKING_DIRECTORY = ''
+SPLITTING_CHARACTER = ''
+if sys.platform.startswith('win') : 
+    SPLITTING_CHARACTER = '\{}'.format('')
+elif sys.platform.startswith('darwin') : 
+    SPLITTING_CHARACTER = '/'
+
+def setup() : 
+    '''
+    Sets up the working directory for the entire project
+    '''
+
+    def locate_working_directory() : 
+        working_directory = ''
+        for element in __file__.split(SPLITTING_CHARACTER)[:-2] :
+            working_directory += element + '{}'.format(SPLITTING_CHARACTER)
+        return working_directory
+    
+    global WORKING_DIRECTORY
+    WORKING_DIRECTORY = locate_working_directory()
+    # print('working_directory --> ',WORKING_DIRECTORY)
+    sys.path.append(WORKING_DIRECTORY)
+
 class Network():
 
     def __init__(self, sizes):
         self.num_layers = len(sizes)
         self.sizes = sizes
-        self.biases = pickle.load(open('C:\Users\dhrre\Desktop\KISHORE_grid\Auto_change\\real_time_text_identification\\try\\classifier_python\\biases.pkl'))
-        self.weights = pickle.load(open('C:\Users\dhrre\Desktop\KISHORE_grid\Auto_change\\real_time_text_identification\\try\\classifier_python\weights.pkl'))
+        self.biases = pickle.load(open(WORKING_DIRECTORY+'\classifier_python\\biases.pkl'))
+        self.weights = pickle.load(open(WORKING_DIRECTORY+'\classifier_python\weights.pkl'))
 
     def feedforward(self, a):
         """Return the output of the network if ``a`` is input."""
@@ -25,14 +54,14 @@ class Network():
             # print(a)
         return a
 
- 
 def sigmoid(z):
     """The sigmoid function."""
     return 1.0/(1.0+np.exp(-z))
 sigmoid_vec = np.vectorize(sigmoid)
 
+setup()
 net = Network([input_layer_neurons,hidden_layer_neurons,output_layer_neurons])
-mapped_list = pickle.load(open('C:\Users\dhrre\Desktop\KISHORE_grid\Auto_change\\real_time_text_identification\\try\\classifier_python\character_map.pkl'))
+mapped_list = pickle.load(open(WORKING_DIRECTORY+'\classifier_python\character_map.pkl'))
 print(mapped_list)
 
 def classifier(image) : 

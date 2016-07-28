@@ -1,3 +1,8 @@
+"""
+	This script checks if the connected camera is primary or secondary using saturation property.
+	Helps to differentiate from laptop camera.
+"""
+
 import cv2 
 import sys 
 import time
