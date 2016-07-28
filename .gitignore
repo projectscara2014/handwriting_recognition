@@ -17,6 +17,8 @@ receipts/
 *.ppt
 *.gz
 
+*.sublime-project
+*.sublime-workspace
 
 project report/
 project documents/
