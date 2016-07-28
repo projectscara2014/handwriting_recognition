@@ -70,19 +70,22 @@ def get_image(camera):
 	retval, im = camera.read()
 	return im
 
-def main():
+def main(queueLock,workQueue):
 	global IMAGE_SAVING_PATH
-	camera_port = var.camera_port
-	camera = cv2.VideoCapture(camera_port)
+	# camera_port = var.camera_port
+	# camera = cv2.VideoCapture(camera_port)
 	while (True):
 		
 		ret, frame = camera.read()
 		cv2.imshow('frame', frame)
 		camera_capture = get_image(camera)	
+		queueLock.acquire()
+		workQueue.put(camera_capture)
+		queueLock.release()
 		if cv2.waitKey(1) & 0xFF == ord('d'):
 			camera.release()
 			break
-		elif cv2.waitKey(1) & 0xFF == ord('n'):
+		elif cv2.waitKey(1) & 0xFF == ord('l'):
 			print(len(camera_capture))
 
 		elif cv2.waitKey(1) & 0xFF == ord('a'):
@@ -93,12 +96,10 @@ def main():
 				print("NO IMAGE FOUND")
 				import sys
 				sys.exit()
-		 	file = IMAGE_SAVING_PATH + "test_image_1" + ".png"
+		 	# file = IMAGE_SAVING_PATH + "test_image_1" + ".png"
 			camera.release()
 			cv2.destroyAllWindows()
-		 	cv2.imwrite(file, camera_capture)
-		 	do(IMAGE_SAVING_PATH)
-			break
+		 	return test_image_1
 
 # def get_image():
 # 	retval, im = camera.read()
@@ -106,8 +107,6 @@ def main():
 
 ########## INIT #######
 def init():
-	global IMAGE_SAVING_PATH
-	IMAGE_SAVING_PATH = get_image_saving_path()
 	with open("background_setting.txt" , 'r') as f:
 		BNW_THRESHOLD = int(f.read())
 
@@ -115,6 +114,12 @@ def init():
 	 	do(IMAGE_SAVING_PATH)
 	else:
 		var.main()
-		main()
+		# main()
 
 init()
+
+if(__name__ == "__main__"):
+	import threads
+	threads.main()
+	import sys
+	sys.exit()
