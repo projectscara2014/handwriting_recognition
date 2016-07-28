@@ -1,3 +1,8 @@
+"""
+	This script takes individual scanned-images from the "cropped_images_folder" and crops out 
+		minimal area images of individual characters into "skin_cropped_images_folder" using connected components labelling.
+"""
+
 import os
 import ccl
 import sys

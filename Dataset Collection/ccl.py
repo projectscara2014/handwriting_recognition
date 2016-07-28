@@ -1,3 +1,9 @@
+"""
+	This script contains all functions required to carry out Connected_Components_Labelling for an image.
+	A special "Variable" class is used which makes this implementation of CCL different from the standard
+		two pass method.
+"""
+
 import sys
 if(__name__ == "__main__"):
 	import auto_script_2_cropped_to_skin_cropped
