@@ -1,3 +1,11 @@
+"""
+	The purpose of this script is to multiply the existing dataset by taking each image from the
+		dataset and tilting them by a few degreees in each direction to account for tilted versions
+		of the same handwritting.
+	Images from the "skin_cropped_images_folder" are taken, rotated, cropped, packed and added to 
+		the "tilted_images_folder" in the form of '.npy' files.
+"""
+
 import os
 import sys
 import script3_main

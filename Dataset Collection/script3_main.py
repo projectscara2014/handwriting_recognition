@@ -1,3 +1,8 @@
+"""
+	Dependency script for "auto_script_3".
+	Contains its "main" function
+"""
+
 if(__name__ == "__main__"):
 	import auto_script_3_skin_cropped_to_tilted
 	import sys
