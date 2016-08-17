@@ -26,7 +26,7 @@ ii) **FPGA implementation** of Neural Network classifier.
 ----------------------------------------
 The project video can be seen at https://www.youtube.com/watch?v=69aiHnCLBSE
 
-Project Contributors:- @dhr9  @ironstein1994  @akash9182  @kishore-saldanha
+Project Contributors:- @dhr9  @riyanshkarani01235  @akash9182  @kishore-saldanha
 
 
 **Note: -** Specific Hardware is required to test sections of the project.
