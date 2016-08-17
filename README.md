@@ -1,5 +1,5 @@
 # Real Time Handwritten Character Recognition using Image Processing and Neural Networks implemented on an FPGA
---------------------------------------
+
 **Contributors** : 
 
  - [Dhruv Reshamwala (dhr9)](http://github.com/dhr9)
