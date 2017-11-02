@@ -5,7 +5,7 @@
  - [Dhruv Reshamwala (dhr9)](http://github.com/dhr9)
  - [Riyansh Karani (riyanshkarani01235)](http://github.com/riyanshkarani01235)
  - [Akash Rana (akash9182)](http://github.com/akash9182)
- - kishore saldanha
+ - [kishore saldanha (kishore-saldanha)](http://github.com/kishore-saldanha)
 
 -------------------------------------
 
